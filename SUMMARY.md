@@ -2,6 +2,7 @@
 
 - [Livreto FACOMpetindo](README.md)
 - [C++](C++/README.md)
+  - [Introdução](C++/introducao.md)
   - [Complexidade de Algoritmos](C++/complexidade.md)
   - [Entradas e saídas](C++/entradas_saidas.md)
   - [Conjuntos](C++/conjuntos.md)
