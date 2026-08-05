@@ -1,16 +1,32 @@
-# Filas de prioridade
+# Filas de Prioridade
 
 ## 📚 Introdução
 
-No artigo anterior vimos como implementar filas e pilhas em C++, agora veremos sobre filas de prioridade.
+No capítulo anterior conhecemos algumas das principais estruturas da STL, como pilhas, filas e conjuntos. Neste capítulo estudaremos outra estrutura extremamente importante em Programação Competitiva: a **fila de prioridade** (`priority_queue`).
 
-A característica que difere uma fila de prioridade de uma fila comum é que os elementos são retirados da fila de acordo com sua prioridade, e não necessariamente na ordem em que foram adicionados.
+Diferente de uma fila comum, onde os elementos são removidos na ordem em que foram inseridos (FIFO), uma fila de prioridade sempre remove primeiro o elemento com maior prioridade. Em C++, essa estrutura é implementada utilizando uma **heap**, permitindo consultar rapidamente o elemento de maior prioridade.
+
+As principais operações possuem as seguintes complexidades:
+
+| Operação  | Complexidade |
+| --------- | :----------: |
+| `top()`   |    `O(1)`    |
+| `push()`  |  `O(log n)`  |
+| `pop()`   |  `O(log n)`  |
+| `empty()` |    `O(1)`    |
+| `size()`  |    `O(1)`    |
+
+Sempre que um problema exigir escolher repetidamente o maior ou o menor elemento de um conjunto que muda ao longo da execução, uma fila de prioridade provavelmente será a estrutura mais adequada.
+
+---
 
 ## 📝 Implementação
 
 ### 📋 Inicializando uma fila de prioridade
 
-Para inicializar uma fila de prioridade, basta importar a biblioteca heapq e usar a função `heapify` para inicializar uma lista como uma fila de prioridade.
+Para utilizar uma fila de prioridade em C++, basta incluir a biblioteca `<queue>` e declarar uma variável do tipo `priority_queue`.
+
+Por padrão, a `priority_queue` do C++ é uma **max-heap**, ou seja, o maior elemento sempre ficará no topo da fila.
 
 ```cpp
 #include <iostream>
@@ -33,15 +49,17 @@ int main() {
 }
 ```
 
-Perceba a saída do print, os elementos não estão na ordem em que foram adicionados, nem em ordem crescente, e nem decrescente! O que está acontecendo aqui?
+Observe que o valor retornado por `top()` é o maior elemento da fila, independentemente da ordem em que os elementos foram inseridos.
 
-A função `heapify` faz com que nossa lista vire uma fila de prioridade, essa estrutura garante que o próximo elemento a ser retirado da fila será o menor elemento da lista, ou seja, o elemento com maior prioridade (nesse caso, pelo menos).
+Isso não significa que todos os elementos estejam ordenados. A `priority_queue` apenas garante que o elemento de maior prioridade estará disponível no topo da estrutura.
 
-Ela não garante que a lista esteja ordenada, mas sim que o próximo elemento a ser retirado será o menor elemento da lista.
+---
 
-### 📋 Adicionando elementos à fila de prioridade
+### 📋 Inserindo e removendo elementos
 
-Podemos usar a função `heappush` para adicionar elementos à fila de prioridade e a função `heappop` para remover elementos da fila de prioridade.
+Os elementos podem ser adicionados utilizando a função `push()` e removidos utilizando `pop()`.
+
+Sempre que um elemento é inserido ou removido, a estrutura reorganiza automaticamente a heap para manter suas propriedades.
 
 ```cpp
 #include <iostream>
@@ -58,11 +76,10 @@ int main() {
     fila.push(4);
     fila.push(2);
 
-    // Adiciona um elemento
     fila.push(6);
 
-    // Remove o elemento com maior prioridade
     cout << fila.top() << "\n"; // 6
+
     fila.pop();
 
     cout << fila.top() << "\n"; // 5
@@ -71,15 +88,54 @@ int main() {
 }
 ```
 
-Sempre que usamos a função `heappush` e `heappop` na nossa fila de prioridade, a função `heapify` é chamada internamente para garantir sua característica.
+Além de `push()`, `pop()` e `top()`, também podemos utilizar:
+
+- `empty()`: verifica se a fila está vazia;
+- `size()`: retorna a quantidade de elementos armazenados.
+
+---
+
+### 📋 Menor elemento primeiro
+
+Como vimos anteriormente, a `priority_queue` do C++ retorna sempre o maior elemento.
+
+Caso desejemos que o menor elemento tenha prioridade, podemos utilizar o comparador `greater`.
+
+```cpp
+#include <iostream>
+#include <queue>
+#include <vector>
+
+using namespace std;
+
+int main() {
+    priority_queue<
+        int,
+        vector<int>,
+        greater<int>
+    > fila;
+
+    fila.push(5);
+    fila.push(3);
+    fila.push(1);
+    fila.push(4);
+    fila.push(2);
+
+    cout << fila.top() << "\n"; // 1
+}
+```
+
+Esse tipo de fila de prioridade é bastante utilizado em algoritmos como o Dijkstra, onde precisamos acessar continuamente o menor custo disponível.
+
+---
 
 ### 📋 Exemplo de uso
 
-Imagine que você é um treinador de pokemons e após capturar vários pokemons você está finalmente pronto para enfrentar o ginásio da cidade, quando você vai batalhar no ginásio você que sempre usar seus pokemons mais fortes.
+Imagine que você é um treinador de Pokémon e, após capturar vários Pokémon, finalmente está pronto para desafiar o ginásio da cidade. Sempre que uma batalha acontece, você deseja utilizar seu Pokémon mais forte.
 
-Sabendo disso, será dado uma sequencia de operações alternadas entre capturar um pokemon ou batalhar em um ginásio, quando uma batalha em um ginásio ocorre você usará sempre seu pokemon mais forte e após a batalha, seu pokemon ficará com metade do poder que tinha antes da batalha.
+Será dada uma sequência de operações. Cada operação pode representar a captura de um novo Pokémon (`C`) ou uma batalha (`B`). Sempre que ocorrer uma batalha, o Pokémon mais forte será utilizado e, após a luta, seu poder será reduzido pela metade.
 
-Em cada comando de batalha, imprima na tela o pokemon selecionado para a batalha.
+Para cada batalha, imprima o nome do Pokémon escolhido.
 
 ```cpp
 #include <iostream>
@@ -116,12 +172,16 @@ int main() {
 }
 ```
 
-O código acima adiciona uma tupla com o poder do pokemon e seu nome na fila de prioridade, porém como queremos sempre usar o pokemon mais forte, adicionamos o poder do pokemon como negativo, assim o pokemon com maior poder será o menor elemento da fila.
+Nesse exemplo, cada elemento da fila é um `pair`, em que o primeiro valor representa o poder do Pokémon e o segundo representa seu nome.
 
-Quando uma batalha ocorre, removemos o pokemon mais forte da fila e imprimimos seu nome, após isso adicionamos o pokemon de volta na fila com seu novo poder.
+Como a `priority_queue` do C++ é uma **max-heap**, o Pokémon com maior poder permanecerá automaticamente no topo da fila. Assim, sempre que uma batalha acontece, basta acessar o topo da estrutura para obter o Pokémon mais forte.
 
-Esse exemplo mostra o poder de uma fila de prioridade, em exercícios que precisamos priorizar tarefas, ou escolher elementos com base em certas características, uma fila de prioridade é uma escolha excelente!
+Após a batalha, removemos esse Pokémon da fila, reduzimos seu poder pela metade e o inserimos novamente. A fila reorganiza automaticamente seus elementos para que o próximo Pokémon mais forte volte a ocupar o topo.
+
+Esse exemplo ilustra bem uma das principais aplicações das filas de prioridade: problemas em que precisamos escolher repetidamente o melhor elemento dentre vários candidatos, enquanto esse conjunto de elementos muda ao longo da execução.
 
 ## 🧑‍🏫 Exercícios
 
-- Exercício [2958](https://www.beecrowd.com.br/judge/pt/problems/view/2958) do Beecrowd, esse problema se trata em priorizar tarefas, ótimo pra se resolver com filas de prioridade!
+### 🟡 Médios
+
+- [O Rolê Bad Vibes](https://www.beecrowd.com.br/judge/pt/problems/view/2958)

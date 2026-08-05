@@ -11,7 +11,7 @@
   - [Busca binária](C++/busca_binaria.md)
   - [Manipulação de bits](C++/bits.md)
   - [Algoritmo guloso](C++/guloso.md)
-  - [Filas e Pilhas](C++/filas_pilhas.md)
+  - [STL](C++/stl.md)
   - [Filas de prioridade](C++/filas_prioridade.md)
   - [Grafos](C++/grafos.md)
   - [Union-Find](C++/union_find.md)
