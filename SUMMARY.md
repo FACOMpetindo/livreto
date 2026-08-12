@@ -20,4 +20,5 @@
 - [Menor caminho - 1](menor_caminho_1.md)
 - [Menor caminho - 2](menor_caminho_2.md)
 - [Algoritmo de Kruskal](kruskal.md)
+- [Two Pointers](two_pointers.md)
 - [Créditos](CREDITOS.md)
