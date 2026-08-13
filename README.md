@@ -1,5 +1,10 @@
 # Livreto FACOMpetindo
 
+<p align="center">
+<a href="https://www.codeforces.com">
+<img src="https://avatars.githubusercontent.com/u/148830644?s=200&v=4" alt="Codeforces" width="80" height="80"/>
+</p>
+
 ## 🤵 Introdução
 
 A Programação Competitiva pode ser classificada como um esporte da mente que desafia os participantes a resolver problemas algorítmicos de forma correta e eficiente dentro de um tempo limitado. Para isso, é necessário dominar estruturas de dados, algoritmos e técnicas de resolução de problemas, além de desenvolver habilidades como raciocínio lógico, criatividade e trabalho sob pressão.
