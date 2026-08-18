@@ -4,6 +4,7 @@
 - [Introdução](introducao.md)
 - [Sublime](sublime.md)
 - [Condicionais](condicionais.md)
+- [Laços](loops.md)
 - [Complexidade de Algoritmos](complexidade.md)
 - [Entradas e saídas](entradas_saidas.md)
 - [Conjuntos](conjuntos.md)
