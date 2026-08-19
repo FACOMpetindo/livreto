@@ -1,6 +1,6 @@
 # Complexidade de Algoritmos
 
-## Introdução
+## 📚 Introdução
 
 Depois de aprender loops, nossos programas deixam de executar todas as instruções apenas uma vez. Um mesmo comando pode ser executado uma, dez, mil ou milhões de vezes.
 
@@ -258,16 +258,16 @@ Em programação competitiva, costuma-se considerar que um programa em C++ conse
 
 A tabela abaixo serve como referência inicial:
 
-| Complexidade | Nome | Valor aproximado de `n` |
-|---|---|---:|
-| $O(1)$ | Constante | Qualquer limite comum |
-| $O(\log n)$ | Logarítmica | Até valores muito grandes, como $10^{18}$ |
-| $O(n)$ | Linear | Até cerca de $10^7$ |
-| $O(n\log n)$ | Linearítmica | Até cerca de $10^6$ |
-| $O(n^2)$ | Quadrática | Até cerca de $10^4$ |
-| $O(n^3)$ | Cúbica | Até cerca de $400$ ou $500$ |
-| $O(2^n)$ | Exponencial | Até cerca de $20$ ou $25$ |
-| $O(n!)$ | Fatorial | Até cerca de $10$ ou $11$ |
+| Complexidade | Nome         |                   Valor aproximado de `n` |
+| ------------ | ------------ | ----------------------------------------: |
+| $O(1)$       | Constante    |                     Qualquer limite comum |
+| $O(\log n)$  | Logarítmica  | Até valores muito grandes, como $10^{18}$ |
+| $O(n)$       | Linear       |                       Até cerca de $10^7$ |
+| $O(n\log n)$ | Linearítmica |                       Até cerca de $10^6$ |
+| $O(n^2)$     | Quadrática   |                       Até cerca de $10^4$ |
+| $O(n^3)$     | Cúbica       |               Até cerca de $400$ ou $500$ |
+| $O(2^n)$     | Exponencial  |                 Até cerca de $20$ ou $25$ |
+| $O(n!)$      | Fatorial     |                 Até cerca de $10$ ou $11$ |
 
 Esses valores não são regras absolutas. Sempre considere também:
 
