@@ -1,6 +1,6 @@
 # Loops
 
-## Introdução
+## 📚 Introdução
 
 Até agora, nossos programas executavam cada instrução apenas uma vez, seguindo a ordem em que elas apareciam no código. Porém, muitos problemas exigem que uma mesma ação seja repetida diversas vezes.
 
@@ -119,12 +119,12 @@ cout << soma << "\n";
 Se `n = 4`, o valor de `soma` muda da seguinte forma:
 
 | Iteração | Valor de `i` | Valor de `soma` |
-|---:|---:|---:|
-| Inicial | - | 0 |
-| 1 | 1 | 1 |
-| 2 | 2 | 3 |
-| 3 | 3 | 6 |
-| 4 | 4 | 10 |
+| -------: | -----------: | --------------: |
+|  Inicial |            - |               0 |
+|        1 |            1 |               1 |
+|        2 |            2 |               3 |
+|        3 |            3 |               6 |
+|        4 |            4 |              10 |
 
 É importante inicializar o acumulador com um valor adequado. Para uma soma, geralmente começamos com `0`. Para uma multiplicação, normalmente começamos com `1`.
 
