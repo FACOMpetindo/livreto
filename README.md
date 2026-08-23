@@ -1,7 +1,7 @@
 # Livreto FACOMpetindo
 
 <p align="center">
-<img src="https://avatars.githubusercontent.com/u/148830644?s=200&v=4" alt="Codeforces" width="80" height="80"/>
+<img src="https://avatars.githubusercontent.com/u/148830644?s=200&v=4" alt="FACOMpetindo" width="80" height="80"/>
 </p>
 
 ## 🤵 Introdução
