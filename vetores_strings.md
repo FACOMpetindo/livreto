@@ -1,6 +1,6 @@
 # Vetores e Strings
 
-## Introdução
+## 📚 Introdução
 
 Até agora, quando precisávamos guardar vários valores, podíamos criar uma variável para cada um deles:
 
