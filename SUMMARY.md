@@ -8,6 +8,7 @@
 - [Laços](loops.md)
 - [Complexidade de Algoritmos](complexidade.md)
 - [Vetores e Strings](vetores_strings.md)
+- [Funções e Recursão](funcoes_recursao.md)
 - [Conjuntos](conjuntos.md)
 - [Crivo de Eratóstenes](crivo.md)
 - [Algoritmo de Euclides](euclides.md)
