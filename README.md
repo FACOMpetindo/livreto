@@ -24,9 +24,9 @@ Este livreto tem como objetivo servir como um guia introdutório para estudantes
 
 ## 📖 Conteúdo
 
-O conteúdo desse repositório é dividido em duas linguagens: C++ e Python, elas foram escolhidas por serem as mais utilizadas em programação competitiva, e aceitas nas competições nacionais e internacionais.
+O conteúdo desse repositório utiliza a linguagem C++, escolhida por ser a mais utilizada em programação competitiva e aceita nas competições nacionais e internacionais.
 
-Cada linguagem possui sua própria divisão com vários artigos que podem ser acessados pelo menu lateral, eles foram pensados para serem lidos em sequência, entretanto caso você seja um leitor mais experiente, pode ler os que chamarem sua atenção primeiro. Ademais, cada linguagem apresenta uma estrutura semelhante de artigos, porém, com alguns artigos a mais ou a menos e exemplos diferentes, seguindo as particularidades de cada linguagem.
+Os artigos podem ser acessados pelo menu lateral e foram pensados para serem lidos em sequência, entretanto caso você seja um leitor mais experiente, pode ler os que chamarem sua atenção primeiro.
 
 Os exercícios são retirados de diversos juizes online, com o foco de treinar a resolução de problemas e praticar o conteúdo apresentado em cada artigo. Os exercícios são separados por dificuldade, e cada artigo apresenta uma lista de exercícios relacionados ao conteúdo abordado.
 
@@ -40,9 +40,7 @@ Alternativamente, caso queira apenas deixar seu feedback sobre o livreto, você 
 
 ## 🧠 Pré-requisitos
 
-Não é necessário saber ambas Python e C++, os artigos são independentes, então você pode escolher a linguagem que preferir, ou até mesmo ler os dois.
-
-Levando em conta a linguagem escolhida, esse livro assume que você já sabe conceitos bases das linguagens, como:
+Esse livro assume que você já sabe conceitos básicos de programação, como:
 
 - Estruturas de repetição
 - Vetores e listas
@@ -55,9 +53,4 @@ C++ é uma ótima linguagem para competições de programação, pela sua alta v
 
 Também, ela é a linguagem mais utilizada nas fases mais avançadas das competições, como a Maratona de Programação da SBC e a ICPC:
 
-<figure><img src="../assets/c++est.png" alt="C++ nas fases da maratona de 2023"><figcaption></figcaption></figure>
-
-## 💻 Linguagens
-
-- [C++](C++/README.md)
-- [Python](Python/README.md)
+<figure><img src="assets/c++est.png" alt="C++ nas fases da maratona de 2023"><figcaption></figcaption></figure>

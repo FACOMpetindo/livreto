@@ -17,39 +17,39 @@ A ideia do algoritmo consiste em:
 
 Vamos entender melhor com um exemplo, observe o seguinte grafo:
 
-<figure><img src="../assets/dji1.png" alt="primeira imagem do dijkstra"><figcaption></figcaption></figure>
+<figure><img src="assets/dji1.png" alt="primeira imagem do dijkstra"><figcaption></figcaption></figure>
 
 Vamos simular o Dijkstra fazendo S=1.
 
 Primeiro, inicializamos as distâncias:
 
-<figure><img src="../assets/dji2.png" alt="segunda imagem do dijkstra"><figcaption></figcaption></figure>
+<figure><img src="assets/dji2.png" alt="segunda imagem do dijkstra"><figcaption></figcaption></figure>
 
 O vértice de menor distância é o 7. Então, selecionamos ele e atualizamos as distâncias dos vértices 3 e 4, que são
 seus vizinhos.
 
-<figure><img src="../assets/dji3.png" alt="terceira imagem do dijkstra"><figcaption></figcaption></figure>
+<figure><img src="assets/dji3.png" alt="terceira imagem do dijkstra"><figcaption></figcaption></figure>
 
 O novo vértice de menor distância é o 2. Selecionamos então ele e só alteramos a distância do vértice 3 (pois não compensa
 mudar o 4).
 
-<figure><img src="../assets/dji4.png" alt="quarta imagem do dijkstra"><figcaption></figcaption></figure>
+<figure><img src="assets/dji4.png" alt="quarta imagem do dijkstra"><figcaption></figcaption></figure>
 
 O novo vértice mais próximo é o vértice 4. Com ele, podemos atualizar a distância do vértice 5 e do vértice 3.
 
-<figure><img src="../assets/dji5.png" alt="quinta imagem do dijkstra"><figcaption></figcaption></figure>
+<figure><img src="assets/dji5.png" alt="quinta imagem do dijkstra"><figcaption></figcaption></figure>
 
 O novo vértice mais próximo é o 3, mas não conseguimos mudar nenhuma distância.
 
-<figure><img src="../assets/dji6.png" alt="sexta imagem do dijkstra"><figcaption></figcaption></figure>
+<figure><img src="assets/dji6.png" alt="sexta imagem do dijkstra"><figcaption></figcaption></figure>
 
 O novo vértice mais próximo é o 5, mas também não atualizamos nenhuma distância.
 
-<figure><img src="../assets/dji7.png" alt="sétima imagem do dijkstra"><figcaption></figcaption></figure>
+<figure><img src="assets/dji7.png" alt="sétima imagem do dijkstra"><figcaption></figcaption></figure>
 
 E assim concluímos o algoritmo, tendo calculado a menor distâncida do vértice 1 para qualquer outro vértice, as distâncias finais são:
 
-<figure><img src="../assets/dji8.png" alt="oitava imagem do dijkstra"><figcaption></figcaption></figure>
+<figure><img src="assets/dji8.png" alt="oitava imagem do dijkstra"><figcaption></figcaption></figure>
 
 Repare que não acessamos o 6 nenhuma vez, pois a distância dele ao 1 é infinita, o que significa que não temos como chegar nele, o que é facilmente observado como verdadeiro.
 

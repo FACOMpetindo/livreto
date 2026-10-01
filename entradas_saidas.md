@@ -48,7 +48,7 @@ int main() {
 
 Antes de continuar, é importante conversar um pouco sobre os diferentes tipos de entradas que podemos encontrar, geralmente sabemos exatamente o número de linhas que serão lidas, por alguma estipulação do enunciado ou um valor do próprio input nos indica, como no exercício 1410 do Beecrowd:
 
-<figure><img src="../assets/1410.png" alt="Exercício 1410 do Beecrowd"><figcaption></figcaption></figure>
+<figure><img src="assets/1410.png" alt="Exercício 1410 do Beecrowd"><figcaption></figcaption></figure>
 
 A entrada pode parecer complicada, mas note que a primeira linha lida nos indica exatamente quantos valores vem a seguir, e o fim é indicado por dois valores 0 seguidos, então podemos ler a entrada da seguinte forma:
 
@@ -72,7 +72,7 @@ int main() {
 
 Porém, existem casos onde não sabemos o número de linhas que serão lidas, como no exercício 2850 do Beecrowd:
 
-<figure><img src="../assets/2850.png" alt="Exercício 2850 do Beecrowd"><figcaption></figcaption></figure>
+<figure><img src="assets/2850.png" alt="Exercício 2850 do Beecrowd"><figcaption></figcaption></figure>
 
 O exercício nem nos disse isso, mas o final de um arquivo de entrada é sempre indicado por EOF (End of File), como não sabemos o número de linhas que serão lidas, temos que usar um while loop que lê até o EOF:
 

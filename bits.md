@@ -174,7 +174,7 @@ x ^= (1 << 2) // x = 1 (001 em binário)
 
 Falamos bastante sobre diversas operações diferentes que podem ser feitas com bits, mas como isso pode ser útil nos problemas? Vamos ver um exemplo, no exercício 1026 do Beecrowd:
 
-<figure><img src="../assets/1026.png" alt="Exercício 1026 do Beecrowd"><figcaption></figcaption></figure>
+<figure><img src="assets/1026.png" alt="Exercício 1026 do Beecrowd"><figcaption></figcaption></figure>
 
 Nesse exercício, temos que escrever um programa que soma da forma incorreta, assim como o circuito feito pelo Mofiz, note que, pelo exemplo de soma que ele deu, 0 + 0 = 0; 1 + 0 = 1 e 1 + 1 = 0. Isso é a mesma coisa que o operador `xor`! Então podemos fazer o seguinte código:
 

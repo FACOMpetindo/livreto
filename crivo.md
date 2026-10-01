@@ -61,7 +61,7 @@ Agora o algoritmo está bem mais rápido, com uma complexidade de `O(Q*sqrt(N))`
 
 Estamos esquecendo de algo muito importante! Se um dado número é primo, então duas vezes esse número não é primo, 3 vezes esse número não é primo e assim por diante, podemos visualizar isso na [animação abaixo](https://pt.wikipedia.org/wiki/Ficheiro:New_Animation_Sieve_of_Eratosthenes.gif):
 
-<figure><img src="../assets/crivo.gif" alt="Animação de números primos"><figcaption></figcaption></figure>
+<figure><img src="assets/crivo.gif" alt="Animação de números primos"><figcaption></figcaption></figure>
 
 Podemos aplicar isso da seguinte forma, poderíamos usar um vetor e percorrer todos os números de 2 a Q, se ele estiver marcado, o número é um primo, então desmarcamos todos os múltiplos desse primo menores que Q, pois eles não são primos.
 
