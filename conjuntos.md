@@ -116,7 +116,7 @@ int main(){
 
 Vamos analisar o exercício 2410 do Beecrowd que caiu na OBI 2012, o enunciado do exercício é o seguinte:
 
-<figure><img src="../assets/2410.png" alt="Exercício 2410 do Beecrowd"><figcaption></figcaption></figure>
+<figure><img src="assets/2410.png" alt="Exercício 2410 do Beecrowd"><figcaption></figcaption></figure>
 
 Primeiramente, esse exercício pode parecer muito simples de resolver! Simplesmente lemos as entradas, colocamos o número do aluno em uma lista se ele não estava lá, e no final verificamos o tamanho da lista, certo?
 

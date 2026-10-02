@@ -10,12 +10,12 @@ Para resolver esse problema, podemos modelar as cidades como vértices e as estr
 
 Vejamos o seguinte grafo:
 
-<figure><img src="../assets/krs1.png" alt="um grafo conexo com 6 vértices"><figcaption></figcaption></figure>
+<figure><img src="assets/krs1.png" alt="um grafo conexo com 6 vértices"><figcaption></figcaption></figure>
 
 Sabemos que, o menor número de arestas que precisamos ter para conectar todos os vértices de um grafo é o número de vértices - 1 (denotamos |V| - 1). No caso do grafo acima, precisamos de 5 arestas para conectar todos os vértices, existem várias formas de escolher essas arestas, vejamos duas delas:
 
-<figure><img src="../assets/krs2.png" alt="uma árvore geradora do grafo"><figcaption></figcaption></figure>
-<figure><img src="../assets/krs3.png" alt="outra árvore geradora do grafo"><figcaption></figcaption></figure>
+<figure><img src="assets/krs2.png" alt="uma árvore geradora do grafo"><figcaption></figcaption></figure>
+<figure><img src="assets/krs3.png" alt="outra árvore geradora do grafo"><figcaption></figcaption></figure>
 
 Note que ambos exemplos são árvores geradoras do grafo, entretanto, a soma dos pesos das arestas da segunda árvore é consideravelmente menor, ela é um exemplo de árvore geradora mínima. Podem existir várias árvores geradoras mínimas para um grafo, mas todas elas terão o mesmo peso.
 
@@ -36,35 +36,35 @@ Sendo assim, podemos utilizar um algoritmo que já vimos anteriormente, o algori
 
 Vamos entender melhor simulando o algoritmo de Kruskal no grafo visto acima, as arestas listadas em ordem crescente de peso são: (1, 5), (1, 2), (2, 3), (3, 5), (4, 5), (5, 6), (1, 6), (2, 5), (3, 4)
 
-<figure><img src="../assets/krs1.png" alt="mesmo grafo anterior com os vértices enumerados"><figcaption></figcaption></figure>
+<figure><img src="assets/krs1.png" alt="mesmo grafo anterior com os vértices enumerados"><figcaption></figcaption></figure>
 
 Começamos pela menor aresta, como os vértices 1 e 5 não estão no mesmo conjunto, adicionamos a aresta (1, 5) à árvore geradora mínima:
 
-<figure><img src="../assets/krs4.png" alt="adicionando a aresta (1, 5) com peso 1"><figcaption></figcaption></figure>
+<figure><img src="assets/krs4.png" alt="adicionando a aresta (1, 5) com peso 1"><figcaption></figcaption></figure>
 
 A próxima aresta é (1, 2), como os vértices 1 e 2 não estão no mesmo conjunto, adicionamos a aresta (1, 2) à árvore geradora mínima:
 
-<figure><img src="../assets/krs5.png" alt="adicionando a aresta (1, 2) com peso 2"><figcaption></figcaption></figure>
+<figure><img src="assets/krs5.png" alt="adicionando a aresta (1, 2) com peso 2"><figcaption></figcaption></figure>
 
 A próxima aresta é (2, 3), como os vértices 2 e 3 não estão no mesmo conjunto, adicionamos a aresta (2, 3) à árvore geradora mínima:
 
-<figure><img src="../assets/krs6.png" alt="adicionando a aresta (2, 3) com peso 3"><figcaption></figcaption></figure>
+<figure><img src="assets/krs6.png" alt="adicionando a aresta (2, 3) com peso 3"><figcaption></figcaption></figure>
 
 A próxima aresta é (3, 5), porém perceba que os vértices 3 e 5 estão no mesmo conjunto, então não podemos adicionar essa aresta, pois ela formaria um ciclo:
 
-<figure><img src="../assets/krs7.png" alt="analisamos a aresta (3, 5) mas não adicionamos ela"><figcaption></figcaption></figure>
+<figure><img src="assets/krs7.png" alt="analisamos a aresta (3, 5) mas não adicionamos ela"><figcaption></figcaption></figure>
 
 A próxima aresta é (4, 5), como os vértices 4 e 5 não estão no mesmo conjunto, adicionamos a aresta (4, 5) à árvore geradora mínima:
 
-<figure><img src="../assets/krs8.png" alt="adicionando a aresta (5, 4) com peso 4"><figcaption></figcaption></figure>
+<figure><img src="assets/krs8.png" alt="adicionando a aresta (5, 4) com peso 4"><figcaption></figcaption></figure>
 
 A próxima aresta é (5, 6), como os vértices 5 e 6 não estão no mesmo conjunto, adicionamos a aresta (5, 6) à árvore geradora mínima:
 
-<figure><img src="../assets/krs9.png" alt="adicionando a aresta (5, 6) com peso 4"><figcaption></figcaption></figure>
+<figure><img src="assets/krs9.png" alt="adicionando a aresta (5, 6) com peso 4"><figcaption></figcaption></figure>
 
 Como já selecionamos |V| - 1 arestas, podemos parar por aqui, finalmente, a árvore geradora mínima do grafo é:
 
-<figure><img src="../assets/krs10.png" alt="árvore geradora mínima final com as arestas (1, 2), (2, 3), (1, 5), (5, 6) e (5, 4)"><figcaption></figcaption></figure>
+<figure><img src="assets/krs10.png" alt="árvore geradora mínima final com as arestas (1, 2), (2, 3), (1, 5), (5, 6) e (5, 4)"><figcaption></figcaption></figure>
 
 Note que ela é diferente da árvore geradora mínima que mostramos anteriormente, mas ambas têm o mesmo peso total, que é 14.
 
