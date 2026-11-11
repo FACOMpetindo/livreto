@@ -4,11 +4,7 @@ Conheça os projetos que colaboram com o FACOMpetindo e compartilham o compromis
 
 ## Overflows
 
-<p align="center">
-  <a href="https://www.overflows.com.br/">
-    <img src="assets/overflows.png" alt="Logo da Overflows" width="250">
-  </a>
-</p>
+<figure><img src="assets/overflows.png" alt="Logo da Overflows"><figcaption></figcaption></figure>
 
 A **[Overflows](https://www.overflows.com.br/)** é uma plataforma web gamificada, desenvolvida no Instituto Federal do Piauí (IFPI), que busca incentivar a prática de programação e tornar o aprendizado de algoritmos e estruturas de dados mais envolvente.
 
