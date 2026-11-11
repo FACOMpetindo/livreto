@@ -38,15 +38,6 @@ Caso queira contribuir, por favor acesse o nosso [repositório no GitHub](https:
 
 Alternativamente, caso queira apenas deixar seu feedback sobre o livreto, você pode preencher o seguinte [formulário](https://forms.gle/Sbqiu3wpTyuK3sEb7).
 
-## 🧠 Pré-requisitos
-
-Esse livro assume que você já sabe conceitos básicos de programação, como:
-
-- Estruturas de repetição
-- Vetores e listas
-- Matrizes e dicionários
-- Funções
-
 ## ⚙️ Por que usar C++?
 
 C++ é uma ótima linguagem para competições de programação, pela sua alta velocidade de execução e funções e estruturas pré-definidas na sua biblioteca padrão.
