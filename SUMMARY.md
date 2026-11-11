@@ -2,6 +2,7 @@
 
 - [Livreto FACOMpetindo](README.md)
 - [Introdução](introducao.md)
+- [Projetos Colaboradores](colaboradores.md)
 - [Sublime](sublime.md)
 - [Entradas e saídas](entradas_saidas.md)
 - [Condicionais](condicionais.md)
@@ -25,4 +26,5 @@
 - [Algoritmo de Kruskal](kruskal.md)
 - [Two Pointers](two_pointers.md)
 - [Busca Binária - 2](busca_binaria_2.md)
+- [Grafos Bipartidos](grafos_bipartidos.md)
 - [Créditos](CREDITOS.md)
